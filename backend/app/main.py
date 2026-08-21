@@ -7,7 +7,7 @@ app = FastAPI(title="Pajak-Cek API")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # dipersempit ke domain Vercel saat deploy (Task 14)
+    allow_origins=["https://pajak-cek.vercel.app", "http://localhost:3000"],
     allow_methods=["*"],
     allow_headers=["*"],
 )

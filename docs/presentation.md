@@ -9,7 +9,7 @@ Isi diambil dari README.md dan docs/superpowers/eval-results/ (angka nyata, buka
 
 **AI Engineer Bootcamp — Final Project**
 [github.com/abdillah-me/pajak-cek](https://github.com/abdillah-me/pajak-cek)
-Demo: `<isi URL Vercel setelah deploy>`
+Demo: [pajak-cek.vercel.app](https://pajak-cek.vercel.app)
 
 ---
 
@@ -170,7 +170,7 @@ Di domain pajak, LLM yang mengarang data bukan cuma bug — itu risiko kredibili
 ## Tautan
 
 - **Kode sumber:** https://github.com/abdillah-me/pajak-cek
-- **Demo:** `<isi URL Vercel setelah deploy>`
+- **Demo:** https://pajak-cek.vercel.app
 - **Hasil evaluasi lengkap:** `docs/superpowers/eval-results/`
 - **README lengkap:** `README.md`
 

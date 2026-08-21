@@ -2,7 +2,7 @@
 
 Final project **AI Engineer Bootcamp (Ruang Guru)** — web app yang membaca gambar Faktur Pajak Indonesia, mengekstrak datanya secara otomatis, lalu mengecek kesesuaiannya terhadap regulasi PPN terkini.
 
-**Demo:** _(link diisi setelah deploy)_
+**Demo:** [pajak-cek.vercel.app](https://pajak-cek.vercel.app)
 
 ## Latar Belakang
 
