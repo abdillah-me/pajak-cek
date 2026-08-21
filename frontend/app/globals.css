@@ -160,3 +160,73 @@
     top: 98%;
   }
 }
+
+/* Helper responsif.
+   Style komponen halaman ini inline (hasil port dari file desain), dan inline
+   style tidak bisa memuat media query. Properti yang perlu berubah per
+   breakpoint ditaruh di sini dan DIHAPUS dari atribut style — kalau tetap
+   ditulis inline, aturan di bawah kalah spesifisitas. */
+
+/* Nav landing: anchor antar-section disembunyikan di layar kecil supaya logo
+   dan CTA tidak terhimpit. */
+.pc-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+@media (max-width: 640px) {
+  .pc-nav-links {
+    gap: 14px;
+  }
+  .pc-nav-section-link {
+    display: none;
+  }
+}
+
+/* Dua kolom halaman analisis. Panel kiri sticky hanya selama benar-benar
+   berdampingan dengan panel hasil; setelah menumpuk, sticky justru menutupi
+   hasil yang sedang dibaca. */
+.pc-analyze-left {
+  flex: 1 1 340px;
+  min-width: 280px;
+  position: sticky;
+  top: 90px;
+}
+
+.pc-analyze-right {
+  flex: 2 1 480px;
+  min-width: 320px;
+}
+
+@media (max-width: 900px) {
+  .pc-analyze-left {
+    position: static;
+    top: auto;
+    flex-basis: 100%;
+    min-width: 0;
+  }
+  .pc-analyze-right {
+    flex-basis: 100%;
+    min-width: 0;
+  }
+}
+
+/* Baris field: label dan nilai menumpuk kalau kesempitan, daripada memaksa
+   halaman bisa di-scroll horizontal. */
+@media (max-width: 480px) {
+  .pc-field-row {
+    flex-wrap: wrap;
+    row-gap: 4px;
+  }
+}
+
+/* Nilai monospace panjang tanpa spasi: NPWP, nomor seri, nama file regulasi. */
+.pc-mono-value {
+  overflow-wrap: anywhere;
+}
+
+/* Log proses: lebih baik punya scroll sendiri daripada melebarkan halaman. */
+.pc-term-log {
+  overflow-x: auto;
+}

@@ -196,7 +196,7 @@ export function FakturAnalyzer() {
   return (
     <div style={{ display: "flex", gap: 32, flexWrap: "wrap", alignItems: "flex-start" }}>
       {/* Left: upload/preview panel */}
-      <div style={{ flex: "1 1 340px", minWidth: 280, position: "sticky", top: 90 }}>
+      <div className="pc-analyze-left">
         {hasImage ? (
           <div
             style={{
@@ -238,6 +238,7 @@ export function FakturAnalyzer() {
               }}
             >
               <span
+                className="pc-mono-value"
                 style={{
                   fontSize: "12.5px",
                   fontFamily: "'IBM Plex Mono', monospace",
@@ -401,7 +402,7 @@ export function FakturAnalyzer() {
       </div>
 
       {/* Right: results panel */}
-      <div style={{ flex: "2 1 480px", minWidth: 320 }}>
+      <div className="pc-analyze-right">
         {status === "loading" && (
           <div
             style={{
@@ -435,6 +436,7 @@ export function FakturAnalyzer() {
               />
             </div>
             <div
+              className="pc-term-log"
               style={{
                 background: "oklch(0.14 0.01 250)",
                 borderRadius: 10,
@@ -595,6 +597,7 @@ export function FakturAnalyzer() {
               {fieldRows.map((row) => (
                 <div
                   key={row.key}
+                  className="pc-field-row"
                   style={{
                     display: "flex",
                     alignItems: "center",
@@ -610,6 +613,7 @@ export function FakturAnalyzer() {
                   <span style={{ fontSize: 14, color: "oklch(0.48 0.006 250)" }}>{row.label}</span>
                   <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
                     <span
+                      className="pc-mono-value"
                       style={{
                         fontWeight: 700,
                         fontSize: "14.5px",
@@ -731,6 +735,7 @@ export function FakturAnalyzer() {
                         {issue.message}
                       </p>
                       <p
+                        className="pc-mono-value"
                         style={{
                           margin: 0,
                           fontSize: 12,
@@ -782,6 +787,7 @@ export function FakturAnalyzer() {
                               }}
                             >
                               <div
+                                className="pc-mono-value"
                                 style={{
                                   fontSize: "12.5px",
                                   fontWeight: 600,

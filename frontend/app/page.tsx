@@ -116,21 +116,24 @@ export default function Home() {
             </div>
             <span style={{ fontWeight: 700, fontSize: 17 }}>Pajak-Cek</span>
           </div>
-          <div style={{ display: "flex", alignItems: "center", gap: 28 }}>
+          <div className="pc-nav-links">
             <a
               href="#cara-kerja"
+              className="pc-nav-section-link"
               style={{ fontSize: 14, fontWeight: 600, color: "oklch(0.48 0.006 250)" }}
             >
               Cara Kerja
             </a>
             <a
               href="#fitur"
+              className="pc-nav-section-link"
               style={{ fontSize: 14, fontWeight: 600, color: "oklch(0.48 0.006 250)" }}
             >
               Fitur
             </a>
             <a
               href="#trust"
+              className="pc-nav-section-link"
               style={{ fontSize: 14, fontWeight: 600, color: "oklch(0.48 0.006 250)" }}
             >
               Transparansi
@@ -185,7 +188,7 @@ export default function Home() {
             style={{
               fontFamily: "Georgia, 'Times New Roman', serif",
               fontWeight: 400,
-              fontSize: "clamp(38px,5.5vw,64px)",
+              fontSize: "clamp(32px,5.5vw,64px)",
               lineHeight: 1.08,
               letterSpacing: "-0.01em",
               margin: "0 0 20px",
