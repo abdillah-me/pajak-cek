@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: pajak-cek-backend
+    runtime: python
+    rootDir: backend
+    plan: free
+    buildCommand: pip install -e .
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: ANTHROPIC_API_KEY
+        sync: false
