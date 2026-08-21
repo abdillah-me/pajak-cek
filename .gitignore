@@ -10,7 +10,7 @@ node_modules/
 .env.local
 
 # Data
-backend/data/chroma_db/
+# chroma_db is committed (7.3MB) so it deploys without re-ingesting at build time
 
 # OS
 .DS_Store
